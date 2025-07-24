@@ -1,0 +1,27 @@
+
+  server:
+    port: 8080
+
+  aws:
+    access-key: ${AWS_ACCESS_KEY_ID}
+    secret-key: ${AWS_SECRET_ACCESS_KEY}
+
+    s3:
+      bucket-name: mi-file-server-bucket-everth
+      region: us-east-2
+
+
+  file:
+    upload:
+      max-size: 10MB
+      allowed-types: jpg,jpeg,png,pdf,txt,doc,docx
+
+  logging:
+    level:
+      com.example: DEBUG
+      software.amazon.awssdk: INFO
+
+  spring:
+    application:
+      admin:
+        enabled=false:
